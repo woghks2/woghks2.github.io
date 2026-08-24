@@ -1,0 +1,63 @@
+# --- 의존성 및 패키지 ---
+node_modules/
+.venv/
+venv/
+ENV/
+env/
+
+# --- SvelteKit / Vite (Frontend) ---
+.svelte-kit/
+.vite/
+build/
+dist/
+frontend/.svelte-kit/
+frontend/build/
+frontend/dist/
+.vercel
+.netlify
+.wrangler
+
+# --- Python (Backend) ---
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+backend/dist/
+backend/build/
+
+# --- 로그 및 테스트 ---
+logs/
+*.log
+test-results/
+storybook-static/
+.playwright-mcp/
+
+# --- 환경 변수 (절대 유출 금지) ---
+.env
+.env.*
+!.env.example
+
+# --- 설정 및 IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+.cursor/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# --- 기타 ---
+src/lib/paraglide
+*.pid
+
+# Docs
+docs/
+Agent.md
+claude.md
+
+# Local source archives for migration
+src/lib/posts/machine-learning/00_Public/
