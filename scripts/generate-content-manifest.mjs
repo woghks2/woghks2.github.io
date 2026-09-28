@@ -156,7 +156,7 @@ function toUrlValue(value) {
 }
 
 function isVisiblePost(metadata) {
-	const status = toStringValue(metadata.status, 'published').trim().toLowerCase();
+	const status = toStringValue(metadata.status, 'draft').trim().toLowerCase();
 	return INCLUDE_DRAFTS || status !== 'draft';
 }
 

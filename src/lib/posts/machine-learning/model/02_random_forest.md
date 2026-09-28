@@ -1,13 +1,13 @@
 ---
-title: "03. 랜덤 포레스트 (Random Forest)"
-description: ""
+title: "02. 랜덤 포레스트 (Random Forest)"
+description: "랜덤 포레스트의 배깅 원리와 주요 특징을 정리합니다."
 date: "2025-01-01"
-hashtags: ["MachineLearning", "Models", "RandomForest"]
+hashtags: ["MachineLearning"]
 skills: ["Machine Learning"]
 status: "published"
 ---
 
-# 03. 랜덤 포레스트 (Random Forest)
+# 02. Random Forest
 
 결정 트리는 구조가 단순하고 결과를 규칙으로 설명하기 쉽습니다. 다만 데이터가 조금만 달라져도 분할 기준이 크게 바뀔 수 있고, 깊게 자라면 학습 데이터의 잡음까지 따라가 과적합되기 쉽습니다. 랜덤 포레스트는 여러 결정 트리의 예측을 모아 이런 불안정성을 줄이는 앙상블 모델입니다.
 

@@ -1,13 +1,13 @@
 ---
-title: "01. 랜덤 포레스트 (Random Forest)"
+title: "06. 랜덤 포레스트 (Random Forest)"
 description: "랜덤 포레스트의 배깅 구조, 장점과 한계, feature importance 해석 주의점을 정리합니다."
-date: "2025-01-01"
+date: "2025-02-01"
 hashtags: ["MachineLearning", "Models", "Classification", "RandomForest"]
 skills: ["Machine Learning", "Python", "Scikit-Learn"]
-status: "published"
+status: "draft"
 ---
 
-# 01. 랜덤 포레스트 (Random Forest)
+# 06. 랜덤 포레스트 (Random Forest)
 
 랜덤 포레스트는 여러 개의 의사결정나무를 만들어 그 결과를 종합하는 앙상블 모델이다.  
 하나의 트리는 쉽게 과적합될 수 있지만, 서로 다른 샘플과 feature를 본 여러 트리를 평균내면 훨씬 안정적인 결과를 만들 수 있다.

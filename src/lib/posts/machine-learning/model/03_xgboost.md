@@ -1,13 +1,13 @@
 ---
-title: "04. XGBoost (Extreme Gradient Boosting)"
+title: "03. XGBoost (Extreme Gradient Boosting)"
 description: "XGBoost가 오차를 줄여가는 수학적 직관과 과적합 방지 원리를 정리합니다."
 date: "2025-01-01"
-hashtags: ["MachineLearning", "Models", "XGBoost", "Boosting"]
+hashtags: ["MachineLearning"]
 skills: ["Machine Learning"]
 status: "published"
 ---
 
-# 04. XGBoost (Extreme Gradient Boosting)
+# 03. XGBoost
 
 랜덤 포레스트가 여러 개의 트리를 **독립적으로** 만들어 투표나 평균으로 결과를 합치는 모델이라면, XGBoost는 앞선 트리의 잔차를 다음 트리가 이어받아 하나씩 보완해 나가는 부스팅(Boosting) 모델입니다.
 
@@ -45,7 +45,7 @@ $$\text{Loss} \approx \text{이전 Loss} + g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(
 
 ## 리프의 최적 예측값과 품질 점수
 
-어떤 리프 노드에 모인 데이터들의 기울기 합을 $G_j = \sum g_i$, 곡률 합을 $H_j = \sum h_i$라고 두면, 이 노드가 내놓아야 할 **최적의 예측값 $w_j^$는 미분을 통해 유도됩니다.
+어떤 리프 노드에 모인 데이터들의 기울기 합을 $G_j = \sum g_i$, 곡률 합을 $H_j = \sum h_i$라고 두면, 이 노드가 내놓아야 할 최적의 예측값 $w_j$는 미분을 통해 유도됩니다.
 
 $$w_j^* = -\frac{G_j}{H_j + \lambda}$$
 
@@ -56,7 +56,7 @@ $$w_j^* = -\frac{G_j}{H_j + \lambda}$$
 
 $$\text{Score} = -\frac{1}{2} \frac{G_j^2}{H_j + \lambda}$$
 
-이 점수의 절댓값이 클수록 오차를 시원하게 해결해 준 좋은 노드라는 뜻입니다.
+이 점수의 절댓값이 클수록 오차를 해결에 기여도가 높은 노드라는 뜻입니다.
 
 ---
 

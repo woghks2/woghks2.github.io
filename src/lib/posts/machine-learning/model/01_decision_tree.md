@@ -1,19 +1,19 @@
 ---
 
-title: "02. 결정 트리 (Decision Tree)"
+title: "01. 결정 트리 (Decision Tree)"
 
-description: ""
+description: "결정 트리의 분할 원리와 과적합 방지 방법을 정리합니다."
 
 date: "2025-01-01"
 
-hashtags: ["MachineLearning", "Models", "DecisionTree"]
+hashtags: ["MachineLearning"]
 
 skills: ["Machine Learning"]
 
 status: "published"
 ---
 
-# 02. 결정 트리 (Decision Tree)
+# 01. 결정 트리 (Decision Tree)
 
 결정 트리는 조건에 따라 데이터를 나누고, 각 데이터가 어떤 클래스에 속하는지 예측하는 모델입니다. 연속형 값을 예측하는 회귀 문제에도 사용할 수 있지만, 이번 글에서는 분류를 기준으로 정리하겠습니다.
 
