@@ -1,36 +1,5 @@
 <script lang="ts">
-	import Discord from './icons/discord.svelte';
-	import Github from './icons/github.svelte';
-	import Gmail from './icons/gmail.svelte';
-	import Linkedin from './icons/linkedin.svelte';
-const currentYear = new Date().getFullYear();
-
-	const socialLinks = [
-		{
-			name: 'Github',
-			href: 'https://github.com/woghks2',
-			icon: Github,
-			label: 'Github'
-		},
-		{
-			name: 'Discord',
-			href: 'https://discord.com',
-			icon: Discord,
-			label: 'Discord'
-		},
-		{
-			name: 'Gmail',
-			href: 'mailto:tbxkdls19@gmail.com',
-			icon: Gmail,
-			label: 'Gmail'
-		},
-		{
-			name: 'Linkedin',
-			href: 'https://linkedin.com/in/your-profile',
-			icon: Linkedin,
-			label: 'Linkedin'
-		}
-	];
+	const currentYear = new Date().getFullYear();
 </script>
 
 
@@ -45,22 +14,7 @@ const currentYear = new Date().getFullYear();
 				</p>
 			</div>
 
-			<div class="flex flex-wrap items-center gap-3">
-				{#each socialLinks as link}
-					<a
-						href={link.href}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="inline-flex h-10 items-center gap-2 px-1 text-sm font-medium text-blog-muted transition-colors hover:text-blog-ink"
-					>
-						<link.icon size="18" />
-
-						<span>{link.label}</span>
-					</a>
-				{/each}
-			</div>
 		</div>
 	</div>
 </footer>
-
 
