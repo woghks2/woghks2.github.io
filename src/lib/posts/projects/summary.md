@@ -41,8 +41,8 @@ status: "published"
 
 관련 링크 :
 
-- [데이터 정합성과 멱등성을 고려한 데이터 파이프라인 구축](/posts/projects/data-platform-data-pipeline)
-- [데이터 신선도를 고려한 API 호출량 최적화](/posts/projects/data-platform-data-warehouse)
+- [데이터 정합성과 멱등성을 고려한 데이터 파이프라인 구축](/posts/projects/duntong-2-data-pipeline)
+- [데이터 신선도를 고려한 API 호출량 최적화](/posts/projects/duntong-3-openapi-call-optimization)
 - [BigQuery 비용 분석을 통한 조회 쿼리 비용 최적화](/posts/projects/duntong-5-bigquery-cost-optimization)
 
 
@@ -54,7 +54,7 @@ status: "published"
 
 관련 링크:
 
-- [검색 접근성 개선 A/B 테스트](/posts/projects/search-accessibility-abtest)
+- [검색 접근성 개선 A/B 테스트](/posts/projects/duntong-1-search-accessibility-abtest)
 
 ---
 
