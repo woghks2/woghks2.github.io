@@ -31,6 +31,12 @@ export type RenderedContentBlock =
 			content: string;
 	  }
 	| {
+			type: 'confusion-matrix-widget';
+	  }
+	| {
+			type: 'roc-pr-widget';
+	  }
+	| {
 			type: 'tabs';
 			tabs: CodeTab[];
 	  }

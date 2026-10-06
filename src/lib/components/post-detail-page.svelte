@@ -1,10 +1,12 @@
 <script lang="ts">
 	import type { PostSummary, RenderedContentBlock } from '$lib/data';
 	import CodeTabs from '$lib/components/code-tabs.svelte';
+	import ConfusionMatrixCalculator from '$lib/components/confusion-matrix-calculator.svelte';
 	import Mermaid from '$lib/components/mermaid.svelte';
 	import MermaidGrid from '$lib/components/mermaid-grid.svelte';
 	import PostHeader from '$lib/components/post-header.svelte';
 	import PostToc from '$lib/components/post-toc.svelte';
+	import RocPrCalculator from '$lib/components/roc-pr-calculator.svelte';
 	import RelatedPosts from '$lib/components/related-posts.svelte';
 	import { formatCategorySlug, getCategoryMeta } from '$lib/category-meta';
 	import { ChevronLeft } from '@lucide/svelte';
@@ -63,6 +65,10 @@
 							{@html block.content}
 						{:else if block.type === 'tabs'}
 							<CodeTabs tabs={block.tabs} />
+						{:else if block.type === 'confusion-matrix-widget'}
+							<ConfusionMatrixCalculator />
+						{:else if block.type === 'roc-pr-widget'}
+							<RocPrCalculator />
 						{:else if block.type === 'mermaid'}
 							<Mermaid code={block.code} />
 						{:else if block.type === 'mermaid-grid'}

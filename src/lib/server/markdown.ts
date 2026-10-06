@@ -233,7 +233,7 @@ export async function parseMarkdownBlocks(md: string): Promise<RenderedContentBl
     
     // Updated regex to handle CRLF and optional whitespace after the identifier
 	const combinedRegex =
-		/\[tabs:([^\]]+)\]([\s\S]*?)\[\/tabs\]|:::diagram-grid(?:\s+(stacked))?\s*\r?\n([\s\S]*?)\r?\n:::\s*|```mermaid\s*\r?\n([\s\S]*?)```/g;
+		/(?:\[confusion-matrix-widget\])|(?:\[roc-pr-widget\])|\[tabs:([^\]]+)\]([\s\S]*?)\[\/tabs\]|:::diagram-grid(?:\s+(stacked))?\s*\r?\n([\s\S]*?)\r?\n:::\s*|```mermaid\s*\r?\n([\s\S]*?)```/g;
     
     let lastIndex = 0;
     let match;
@@ -246,7 +246,11 @@ export async function parseMarkdownBlocks(md: string): Promise<RenderedContentBl
             });
         }
 
-		if (match[0].startsWith('[tabs:')) {
+		if (match[0] === '[confusion-matrix-widget]') {
+			blocks.push({ type: 'confusion-matrix-widget' });
+		} else if (match[0] === '[roc-pr-widget]') {
+			blocks.push({ type: 'roc-pr-widget' });
+		} else if (match[0].startsWith('[tabs:')) {
             const labels = match[1].split(',').map(s => s.trim());
             const innerContent = match[2];
             // Updated inner regex to handle CRLF as well
