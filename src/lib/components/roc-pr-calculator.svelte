@@ -1,8 +1,8 @@
 <script lang="ts">
 	type CurvePoint = { x: number; y: number };
 
-	let separation = $state(2.2);
-	let positiveRatio = $state(0.36);
+	let separation = $state(2);
+	let positiveRatio = $state(0.2);
 	let scoreThreshold = $state(0);
 
 	function normalCdf(value: number): number {
