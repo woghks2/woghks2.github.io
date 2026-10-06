@@ -88,7 +88,7 @@ average_precision = average_precision_score(y_true, y_score)
 
 ROC 커브는 FPR과 TPR의 관계를, PR 커브는 Recall과 Precision의 관계를 보여줍니다. ROC-AUC와 AP/PR-AUC는 여러 임계값에 걸친 성능을 요약하지만 실제 임계값을 대신 선택하지는 않습니다. Positive가 드문 문제에서는 PR 커브도 확인하고, 최종 운영 기준은 오류 비용을 반영해 정해야 합니다.
 
-## 자주 묻는 질문
+## QNA
 
 > [!question] AUC에 ROC 커브와 PR 커브가 포함되나요?
 >
